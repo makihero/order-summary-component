@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Pale-blue);
+    font-size: 16px;
+    text-align: center;
+    color: var(--Desaturated-blue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 71px auto;
+    width: 328px;
+    height: 570px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 328px;
+    height: 160px
+}
+
+.card h1 {
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--Dark-blue);
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.summary-text {
+    margin-bottom: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    padding: 0 42px;
+}
+
+.plan {
+    width: 278px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.plan img {
+    width: 48px;
+    height: 48px;
+}
+
+.plan-details {
+    text-align: left;
+    margin-right: 16px;
+}
+
+.plan-details h2 {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.plan-details p {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.plan a {
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+
+.plan a:hover {
+    text-decoration: none;
+}
+
+button {
+    width: 278px;
+    height: 48px;
+    background-color: var(--Bright-blue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 24px 0 30px 0;
+    cursor: pointer;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancel-order {
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cancel-order:hover {
+    color: var(--Dark-blue);
+}
+
+@media (min-width: 920px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .container {
+        width: 454px;
+        height: 700px;
+        margin: 102px auto;
+    }
+
+    .card img {
+        width: 454px;
+        height: 220px
+    }
+
+    .summary-text {
+        padding: 0 80px;
+    }
+
+    .plan {
+        width: 400px;
+    }
+
+    .plan img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .plan-details {
+        margin-right: 95px;
+    }
+
+    button {
+        width: 400px;
+        margin: 32px 0 32px 0;
+    }
+
+}
